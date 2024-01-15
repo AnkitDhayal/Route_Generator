@@ -112,14 +112,12 @@ void RouteGenerator::sceneStatic() {
         mColors << 1 << 0 << 1;
     }
 
-
     mVertices.clear();
     mColors.clear();
     std::vector<float>PipeVertices;
     std::vector<float>PipeColor;
     PipeVertices.push_back(-1);
-   
-
+  
     mRenderer->setVectorOfLines(mVertices);
     mRenderer->setColorOfLines(mColors);
     mVertices.clear();
@@ -149,7 +147,6 @@ void RouteGenerator::readOBJ() {
             objColors.push_back(1.0);
             objColors.push_back(1.0);
             objColors.push_back(1.0);
-
         }
     }
    

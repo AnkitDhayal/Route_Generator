@@ -25,7 +25,6 @@ private slots:
     void stop();
 
 private:
-    //Ui::RouteGeneratorClass ui;
 
     OpenGLWindow* mRenderer;
     QWidget* centralWidget;

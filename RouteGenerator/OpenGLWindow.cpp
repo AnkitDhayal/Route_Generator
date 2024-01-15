@@ -68,7 +68,6 @@ void OpenGLWindow::setVectorOfLines(QVector<GLfloat>& vectorOfLines)
     verticesOfOrignalLine << 4.0 << 5.0 << 0.0;
     verticesOfOrignalLine << 4.0 << 4.0 << 0.0;
 
-
     verticesOfOrignalLine << 10.0 << 10.0 << 0.0;
     verticesOfOrignalLine << 11.0 << 10.0 << 0.0;
 
@@ -133,7 +132,6 @@ void OpenGLWindow::fillSquare(const QVector<QVector2D>& squareVertices, const QV
 
 }
 
-
 void OpenGLWindow::paintGL()
 {
     glClear(GL_COLOR_BUFFER_BIT);
@@ -163,6 +161,7 @@ void OpenGLWindow::paintGL()
 
 
 }
+
 void OpenGLWindow::updateData(const QVector<GLfloat>& vertices, const QVector<GLfloat>& colors) {
 
     verticesOfOrignalLine = vertices;
@@ -224,6 +223,7 @@ QString OpenGLWindow::readShader(QString filePath) {
     file.close();
     return line;
 }
+
 void OpenGLWindow::initializeGL()
 {
     QString qvertexShaderSource = readShader("vertexShader.glsl");

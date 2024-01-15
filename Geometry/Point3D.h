@@ -1,7 +1,9 @@
 #pragma once
 #include "pch.h"
+
 class GEOMETRY_API Point3D
 {
+
 public:
     // Constructors
     Point3D();
@@ -16,7 +18,9 @@ public:
     void setX(double x_coord);
     void setY(double y_coord);
     void setZ(double z_coord);
+
 private:
+
     double mX;
     double mY;
     double mZ;
