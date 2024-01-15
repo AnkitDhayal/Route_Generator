@@ -1,0 +1,30 @@
+\doxysection{pch.\+h}
+\hypertarget{pch_8h_source}{}\label{pch_8h_source}\mbox{\hyperlink{pch_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ pch.h:\ This\ is\ a\ precompiled\ header\ file.}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Files\ listed\ below\ are\ compiled\ only\ once,\ improving\ build\ performance\ for\ future\ builds.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ This\ also\ affects\ IntelliSense\ performance,\ including\ code\ completion\ and\ many\ code\ browsing\ features.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ However,\ files\ listed\ here\ are\ ALL\ re-\/compiled\ if\ any\ one\ of\ them\ is\ updated\ between\ builds.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ Do\ not\ add\ files\ here\ that\ you\ will\ be\ updating\ frequently\ as\ this\ negates\ the\ performance\ advantage.}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ PCH\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ PCH\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ add\ headers\ that\ you\ want\ to\ pre-\/compile\ here}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{framework_8h}{framework.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PCH\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ The\ following\ ifdef\ block\ is\ the\ standard\ way\ of\ creating\ macros\ which\ make\ exporting}}
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ from\ a\ DLL\ simpler.\ All\ files\ within\ this\ DLL\ are\ compiled\ with\ the\ PIPE\_EXPORTS}}
+\DoxyCodeLine{00017\ \textcolor{comment}{//\ symbol\ defined\ on\ the\ command\ line.\ This\ symbol\ should\ not\ be\ defined\ on\ any\ project}}
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ that\ uses\ this\ DLL.\ This\ way\ any\ other\ project\ whose\ source\ files\ include\ this\ file\ see}}
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ PIPE\_API\ functions\ as\ being\ imported\ from\ a\ DLL,\ whereas\ this\ DLL\ sees\ symbols}}
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ defined\ with\ this\ macro\ as\ being\ exported.}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#ifdef\ PIPE\_EXPORTS}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ PIPE\_API\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ PIPE\_API\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

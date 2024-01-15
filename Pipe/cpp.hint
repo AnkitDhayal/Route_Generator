@@ -1,0 +1,2 @@
+#define PIPE_API __declspec(dllexport)
+#define PIPE_API __declspec(dllimport)
