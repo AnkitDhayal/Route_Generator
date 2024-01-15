@@ -12,8 +12,6 @@
 class OBSTACLES_API CObstacles {
 public:
 	CObstacles(void);
-	// TODO: add your methods here.
-
 
 };
 

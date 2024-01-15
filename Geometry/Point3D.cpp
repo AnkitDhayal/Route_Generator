@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "Point3D.h"
 
-
 // Constructors
 Point3D::Point3D() : mX(0.0), mY(0.0), mZ(0.0) {}
 

@@ -25,6 +25,7 @@ public:
     void wheelEvent(QWheelEvent* event);
     QString readShader(QString filepath);
     void writeStringToFile(const QString& text, const QString& filePath);
+
     //void setTextureImage(const QImage& image); // Function to set the background image
     void signal_transform(bool val);
 protected:
@@ -55,7 +56,6 @@ private:
     int mMatrixUniform;
     QColor mBackground;
     QMetaObject::Connection mContextWatchConnection;
-
 
     QVector<GLfloat> verticesOfOrignalLine;
     QVector<GLfloat> colorOfOrignalLine;
